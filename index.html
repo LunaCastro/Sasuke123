@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luna Formulário</title>
+</head>
+<body>
+        <main class="content">
+          <form method="POST" action="" enctype="multipart/form-data">
+            <fieldset>
+              <legend>Cadastro</legend>
+             <div>
+                <label for="nome">Nome: </label>
+                <input type="text" name="nome" id="nome" /> <br/>
+            </div>
+            <div>
+                <label for="email">E-mail: </label>
+                <input type="email" name="email" required /><br />
+            </div>
+            <div>
+                <input type="radio" name="sex" value="male"> Masculino 
+                <input type="radio" name="sex" value="female"> Feminino <br/>
+                <div>
+                <label for="estado">Estado/Cidade</label> 
+                <select for="estado" id="estado" required>
+                <option></option>
+                <option value="1">Minas Gerais</option>
+                <option value="2">São Paulo</option>
+                <option value="3">Rio de Janeiro</option>
+                <input type="cidade" id="cidade" value="cidade" required /><br />
+                <div>
+                <label for="file">Selecione um arquivo </label>
+                <input type="file" name="arquivo[]" multiple /><br />
+            </div>
+            <div>
+                 <label for="mensagem">Sugestão:</label><br/>
+                 <textarea name="mensagem"></textarea>
+             </div>
+             <div>
+                 <input type="image" src="./img/botao-enviar-dados.jpg" >
+             </div>
+            </fieldset>
+          </form>
+        </main>
+        
+    
+</body>
+</html>
